@@ -12,23 +12,26 @@ namespace slotGame
 {
     public partial class FrmSlot : Form
     {
-        private Image[]img = new Image[3];
+        private String[]img = new String[3];
 
         public FrmSlot()
         {
             InitializeComponent();
 
+            lblMsg.Visible = false;
+
             btnStop1.Enabled = false;
             btnStop2.Enabled = false;
             btnStop3.Enabled = false;
 
-            img[0] = Image.FromFile("C:\\Users\\shinari\\Desktop\\slotGame\\p\\coin.png");
-            img[1] = Image.FromFile("C:\\Users\\shinari\\Desktop\\slotGame\\p\\chaba.png");
-            img[2] = Image.FromFile("C:\\Users\\shinari\\Desktop\\slotGame\\p\\ballet.png");
+            img[0] = ("C:\\Users\\shinari\\Desktop\\slotGame\\p\\coin.png");
+            img[1] = ("C:\\Users\\shinari\\Desktop\\slotGame\\p\\chaba.png");
+            img[2] = ("C:\\Users\\shinari\\Desktop\\slotGame\\p\\ballet.png");
         }
 
         private async void btnStart_Click(object sender, EventArgs e)
         {
+            lblMsg.Visible=false;
 
             btnStart.Enabled = false;
 
@@ -45,25 +48,37 @@ namespace slotGame
                 if (btnStop1.Enabled)
                 {
                     index = r.Next(3);
-                    pb1.Image = img[index];
+                    pb1.ImageLocation = img[index];
                 }
 
                 if (btnStop2.Enabled)
                 {
                     index = r.Next(3);
-                    pb2.Image = img[index];
+                    pb2.ImageLocation = img[index];
                 }
 
                 if (btnStop3.Enabled)
                 {
                     index = r.Next(3);
-                    pb3.Image = img[index];
+                    pb3.ImageLocation = img[index];
                 }
 
                 if (btnStop1.Enabled == false &&
                    btnStop2.Enabled == false &&
                    btnStop3.Enabled == false)
                 {
+                    if(pb1.ImageLocation == pb2.ImageLocation &&
+                        pb2.ImageLocation == pb3.ImageLocation)
+                    {
+                        lblMsg.Visible = true;
+                        lblMsg.Text = "成功！";
+                    }
+                    else
+                    {
+                        lblMsg.Visible = true;
+                        lblMsg.Text = "残念…";
+                    }
+
                     btnStart.Enabled = true;
                     break;
                 }
@@ -78,6 +93,11 @@ namespace slotGame
             Button btn = (Button)sender;
             btn.Enabled = false;
 
-        }   
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
