@@ -48,6 +48,7 @@
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "スタート";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnStop1
             // 
@@ -57,6 +58,7 @@
             this.btnStop1.TabIndex = 0;
             this.btnStop1.Text = "ストップ";
             this.btnStop1.UseVisualStyleBackColor = true;
+            this.btnStop1.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnStop2
             // 
@@ -66,6 +68,7 @@
             this.btnStop2.TabIndex = 0;
             this.btnStop2.Text = "ストップ";
             this.btnStop2.UseVisualStyleBackColor = true;
+            this.btnStop2.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnStop3
             // 
@@ -75,12 +78,14 @@
             this.btnStop3.TabIndex = 0;
             this.btnStop3.Text = "ストップ";
             this.btnStop3.UseVisualStyleBackColor = true;
+            this.btnStop3.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // pb2
             // 
             this.pb2.Location = new System.Drawing.Point(181, 140);
             this.pb2.Name = "pb2";
             this.pb2.Size = new System.Drawing.Size(145, 116);
+            this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb2.TabIndex = 1;
             this.pb2.TabStop = false;
             // 
@@ -89,6 +94,7 @@
             this.pb1.Location = new System.Drawing.Point(12, 140);
             this.pb1.Name = "pb1";
             this.pb1.Size = new System.Drawing.Size(145, 116);
+            this.pb1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb1.TabIndex = 1;
             this.pb1.TabStop = false;
             // 
@@ -97,6 +103,7 @@
             this.pb3.Location = new System.Drawing.Point(346, 140);
             this.pb3.Name = "pb3";
             this.pb3.Size = new System.Drawing.Size(145, 116);
+            this.pb3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb3.TabIndex = 1;
             this.pb3.TabStop = false;
             // 
