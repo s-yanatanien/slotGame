@@ -28,108 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.btnStop1 = new System.Windows.Forms.Button();
+            this.btnStop2 = new System.Windows.Forms.Button();
+            this.btnStop3 = new System.Windows.Forms.Button();
+            this.pb2 = new System.Windows.Forms.PictureBox();
+            this.pb1 = new System.Windows.Forms.PictureBox();
+            this.pb3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnStart
             // 
-            this.button1.Location = new System.Drawing.Point(181, 69);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnStart.Location = new System.Drawing.Point(181, 69);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(145, 39);
+            this.btnStart.TabIndex = 0;
+            this.btnStart.Text = "スタート";
+            this.btnStart.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnStop1
             // 
-            this.button2.Location = new System.Drawing.Point(12, 262);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 39);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "button1";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnStop1.Location = new System.Drawing.Point(12, 262);
+            this.btnStop1.Name = "btnStop1";
+            this.btnStop1.Size = new System.Drawing.Size(145, 39);
+            this.btnStop1.TabIndex = 0;
+            this.btnStop1.Text = "ストップ";
+            this.btnStop1.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnStop2
             // 
-            this.button3.Location = new System.Drawing.Point(181, 262);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 39);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button1";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnStop2.Location = new System.Drawing.Point(181, 262);
+            this.btnStop2.Name = "btnStop2";
+            this.btnStop2.Size = new System.Drawing.Size(145, 39);
+            this.btnStop2.TabIndex = 0;
+            this.btnStop2.Text = "ストップ";
+            this.btnStop2.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnStop3
             // 
-            this.button4.Location = new System.Drawing.Point(346, 262);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(145, 39);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "button1";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnStop3.Location = new System.Drawing.Point(346, 262);
+            this.btnStop3.Name = "btnStop3";
+            this.btnStop3.Size = new System.Drawing.Size(145, 39);
+            this.btnStop3.TabIndex = 0;
+            this.btnStop3.Text = "ストップ";
+            this.btnStop3.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pb2
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(181, 140);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 116);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.pb2.Location = new System.Drawing.Point(181, 140);
+            this.pb2.Name = "pb2";
+            this.pb2.Size = new System.Drawing.Size(145, 116);
+            this.pb2.TabIndex = 1;
+            this.pb2.TabStop = false;
             // 
-            // pictureBox2
+            // pb1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(12, 140);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(145, 116);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pb1.Location = new System.Drawing.Point(12, 140);
+            this.pb1.Name = "pb1";
+            this.pb1.Size = new System.Drawing.Size(145, 116);
+            this.pb1.TabIndex = 1;
+            this.pb1.TabStop = false;
             // 
-            // pictureBox3
+            // pb3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(346, 140);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(145, 116);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
+            this.pb3.Location = new System.Drawing.Point(346, 140);
+            this.pb3.Name = "pb3";
+            this.pb3.Size = new System.Drawing.Size(145, 116);
+            this.pb3.TabIndex = 1;
+            this.pb3.TabStop = false;
             // 
             // FrmSlot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 462);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pb1);
+            this.Controls.Add(this.pb3);
+            this.Controls.Add(this.pb2);
+            this.Controls.Add(this.btnStop3);
+            this.Controls.Add(this.btnStop2);
+            this.Controls.Add(this.btnStop1);
+            this.Controls.Add(this.btnStart);
             this.Name = "FrmSlot";
             this.Text = "スロット";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnStop1;
+        private System.Windows.Forms.Button btnStop2;
+        private System.Windows.Forms.Button btnStop3;
+        private System.Windows.Forms.PictureBox pb2;
+        private System.Windows.Forms.PictureBox pb1;
+        private System.Windows.Forms.PictureBox pb3;
     }
 }
 
